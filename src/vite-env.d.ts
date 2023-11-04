@@ -1,5 +1,7 @@
 /// <reference types="vite/client" />
 
+
+
 type vec2 = {
     x: number,
     y: number
@@ -19,3 +21,4 @@ type mouseData  = Partial<vec2> & {
     width: number
     height: number
 }
+type rect = vec2 & size

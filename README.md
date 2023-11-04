@@ -1,27 +1,25 @@
-# React + TypeScript + Vite
+# Game
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+[Game Jam](https://itch.io/jam/game-off-2023) 
 
-Currently, two official plugins are available:
+The theme is SCALE
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+/skāl/
 
-## Expanding the ESLint configuration
+Verb
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+to climb up something steep, such as a wall, building, or mountain.
+to change the size of something e.g. make something smaller (scale down) or increase the size, amount, or importance of something (scale up).
+to progress in a graduated series.
+to remove the small flat hard pieces of skin from a fish.
+to remove tartar and plaque from teeth.
 
-- Configure the top-level `parserOptions` property like this:
+Noun
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+a device for weighing people or objects.
+one of the many very small, flat pieces that cover the skin of fish, snakes, etc.
+a set of numbers, amounts, etc., used to measure or compare the level of something e.g., Farenheit, Richter scale.
+the ratio between the real size of something and its size on a visualization.
+a series of notes differing in pitch according to a specific scheme (usually within an octave).
+an indicator having a graduated sequence of marks.
+any of the small overlapping usually metal pieces forming the outer surface of scale armor.
