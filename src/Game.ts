@@ -2,7 +2,7 @@ import { isEqual } from "lodash"
 import Cell from "./Cell"
 import bgUrl from "./assets/indev.png"
 import Defender from "./Defender"
-
+import {Dispatch} from "react"
 export default class Game {
     ctx: CanvasRenderingContext2D
     cellSize = 80
@@ -15,9 +15,14 @@ export default class Game {
     defenders: Defender[]
     defenderCost = 100
     numberOfResources = 300
+    getGameData: () => Promise<any>
+    setGameData: Dispatch<any>
     
-    constructor(ctx: CanvasRenderingContext2D)
+    constructor(ctx: CanvasRenderingContext2D, getGameData: () => Promise<any>, setGameData: Dispatch<any>)
     {
+        this.getGameData = getGameData
+        this.setGameData = setGameData
+        setGameData("123")
         this.defenders = []
         this.bg = new Image()
         this.bg.src = bgUrl
@@ -84,6 +89,8 @@ export default class Game {
     }
 
     private async createGrid() {
+        console.log(this.getGameData())
+
         for (var y = this.cellSize; y < this.ctx.canvas.height; y += this.cellSize) {
             for (var x = this.cellSize; x < this.ctx.canvas.width; x += this.cellSize) {
                 this.gameGrid.push(new Cell(this.ctx, {x,y}, this.cellSize, async () => {
@@ -114,6 +121,7 @@ export default class Game {
 
     async Update()
     {
+        console.log(await this.getGameData())
         if(!isEqual(this.canvasPos.toJSON(), this.ctx.canvas.getBoundingClientRect().toJSON()))
         {
             this.canvasPos = this.ctx.canvas.getBoundingClientRect()
