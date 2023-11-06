@@ -30,7 +30,7 @@ export default function App() {
             {
                 await game.Update()
                 await game.Draw()
-                id = requestAnimationFrame(loop)
+                if (!game.gameOver) id = requestAnimationFrame(loop)
             }
             var id = requestAnimationFrame(loop)
             setGameData("123")

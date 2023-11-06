@@ -22,3 +22,5 @@ type mouseData  = Partial<vec2> & {
     height: number
 }
 type rect = vec2 & size
+
+type HealthCallback = (oldHealth: number, health: number) => (void | Promise<void>)

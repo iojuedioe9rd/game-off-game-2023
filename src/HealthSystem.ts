@@ -1,6 +1,5 @@
 import { isUndefined } from "lodash"
 
-type HealthCallback = (oldHealth: number, health: number) => (void | Promise<void>)
 
 export default class HealthSystem {
     private health: number
